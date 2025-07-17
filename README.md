@@ -1,54 +1,112 @@
 <img src="./assets/pause_icon.png" alt="GFN-Pause" width="320">
 
-
 # GFN-Pausen-Tracker
 
-Bu basit Python uygulaması, okul saatlerine göre güncel durumu (Unterricht, Pause, Feierabend) gösteren bir saat ve durum takipçisidir. Program, belirtilen saat aralıklarına göre geçerli durumu kullanıcıya görsel ve yazılı olarak iletir.
+Diese einfache Python-Anwendung ist ein Uhr- und Status-Tracker, der den aktuellen Status (Unterricht, Pause, Feierabend) gemäß den Schulzeiten anzeigt. Das Programm informiert den Benutzer visuell und schriftlich über den aktuellen Status entsprechend der angegebenen Zeitintervalle.
 
 ---
 
-## Özellikler
+## Funktionen
 
-- Güncel saat ve durum gösterimi (`Unterricht`, `Pause`, `Feierabend`, `Außerhalb der Unterrichtszeit`).
-- Duruma göre arka plan rengi değişimi ve görsel bildirim.
-- Otomatik olarak duruma göre bilgilendirme metni güncellemesi.
-- Dinamik olarak pencere boyutuna göre yazı tipi boyutunu ayarlar.
-- Durum değişiminde sesli uyarı (Windows ortamında).
+- Anzeige der aktuellen Uhrzeit und des Status (Unterricht, Pause, Feierabend).
+- Änderung der Hintergrundfarbe und visuelle Benachrichtigung je nach Status.
+- Automatische Aktualisierung des Informationstextes je nach Status.
+- Dynamische Anpassung der Schriftgröße an die Fenstergröße.
+- Akustische Benachrichtigung bei Statusänderungen (in Windows).
 
 ---
 
-## Gereksinimler
+## Anforderungen
 
 - Python 3.x
-- [Pillow](https://pillow.readthedocs.io/en/stable/) kütüphanesi (resim işlemleri için)
+- [Pillow](https://pillow.readthedocs.io/en/stable/) Bibliothek (für Bildverarbeitung)
 
-### Gereksinimlerin Kurulumu
+### Installation der Anforderungen
 
--  **Python Kurulumu:** [BURADAN] sisteminize uyumlu versiyonu indirip kurun.
+-  **Python-Installation:** Laden Sie die für Ihr System passende Version [HIER] herunter und installieren Sie sie.
 
-  [BURADAN]: https://www.python.org/downloads/
+  [HIER]: https://www.python.org/downloads/
 
-- **Pillow Kurulumu**
+- **Pillow-Installation**
   ```bash
   pip install pillow
   ```
 
-## Kurulum
-- Depoyu klonlayın veya dosyaları indirin.
-- GFNpause.py, pause_icon.png ve mein_icon.ico dosyalarının aynı klasörde olduğundan emin olun.
-- Komut satırından programın bulunduğu klasöre gidin.
-- Programı çalıştırmak için:
+## Einrichtung
+- Klonen Sie das Repository oder laden Sie die Dateien herunter.
+- Stellen Sie sicher, dass sich die Dateien GFNpause.py, pause_icon.png und mein_icon.ico im selben Ordner befinden.
+- Navigieren Sie in der Befehlszeile zu dem Ordner, in dem sich das Programm befindet.
+- Um das Programm auszuführen:
    ```bash
   python GFNpause.py
   ```
-  *Pencere açılacak ve güncel saat ile durum bilgisi gösterilecektir.*
+  *Ein Fenster öffnet sich und zeigt die aktuelle Uhrzeit und Statusinformationen an.*
 
-## EXE Dosyası Oluşturma (İsteğe Bağlı)
+## EXE-Datei erstellen (Optional)
 
-Windows için .exe dosyası oluşturmak istiyorsanız, PyInstaller kullanabilirsiniz:
+Wenn Sie eine .exe-Datei für Windows erstellen möchten, können Sie PyInstaller verwenden:
   ```bash
   pyinstaller --onefile --noconsole --icon=mein_icon.ico --add-data "pause_icon.png;." GFNpause.py
    ```
-Bu komut, tüm bağımlılıkları tek bir dosyada paketler ve belirtilen ikon ile exe dosyasını oluşturur.
+Dieser Befehl packt alle Abhängigkeiten in eine einzige Datei und erstellt die exe-Datei mit dem angegebenen Symbol.
+
+
+
+
+
+#GFN-Pausen-Tracker
+
+Diese einfache Python-Anwendung ist ein Uhr- und Status-Tracker, der den aktuellen Status (Unterricht, Pause, Feierabend) gemäß den Schulzeiten anzeigt. Das Programm informiert den Benutzer visuell und schriftlich über den aktuellen Status entsprechend der angegebenen Zeitintervalle.
+
+Funktionen
+
+    Anzeige der aktuellen Uhrzeit und des Status (Unterricht, Pause, Feierabend, Außerhalb der Unterrichtszeit).
+
+    Änderung der Hintergrundfarbe und visuelle Benachrichtigung je nach Status.
+
+    Automatische Aktualisierung des Informationstextes je nach Status.
+
+    Dynamische Anpassung der Schriftgröße an die Fenstergröße.
+
+    Akustische Benachrichtigung bei Statusänderungen (in Windows-Umgebung).
+
+Anforderungen
+
+    Python 3.x
+
+    Pillow Bibliothek (für Bildverarbeitung)
+
+Installation der Anforderungen
+
+    Python-Installation: Laden Sie die für Ihr System passende Version HIER herunter und installieren Sie sie.
+
+    Pillow-Installation
+    Bash
+
+    pip install pillow
+
+Einrichtung
+
+    Klonen Sie das Repository oder laden Sie die Dateien herunter.
+
+    Stellen Sie sicher, dass sich die Dateien GFNpause.py, pause_icon.png und mein_icon.ico im selben Ordner befinden.
+
+    Navigieren Sie in der Befehlszeile zu dem Ordner, in dem sich das Programm befindet.
+
+    Um das Programm auszuführen:
+    Bash
+
+    python GFNpause.py
+
+    Ein Fenster öffnet sich und zeigt die aktuelle Uhrzeit und Statusinformationen an.
+
+EXE-Datei erstellen (Optional)
+
+Wenn Sie eine .exe-Datei für Windows erstellen möchten, können Sie PyInstaller verwenden:
+Bash
+
+pyinstaller --onefile --noconsole --icon=mein_icon.ico --add-data "pause_icon.png;." GFNpause.py
+
+Dieser Befehl packt alle Abhängigkeiten in eine einzige Datei und erstellt die exe-Datei mit dem angegebenen Symbol.
 
   
