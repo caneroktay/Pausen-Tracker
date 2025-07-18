@@ -1,6 +1,5 @@
-<img src="./assets/pause_icon.png" alt="GFN-Pause" width="320">
 
-# GFN-Pausen-Tracker
+# Pausen-Tracker
 
 Diese einfache Python-Anwendung ist ein Uhr- und Status-Tracker, der den aktuellen Status (Unterricht, Pause, Feierabend) gemäß den Schulzeiten anzeigt. Das Programm informiert den Benutzer visuell und schriftlich über den aktuellen Status entsprechend der angegebenen Zeitintervalle.
 
